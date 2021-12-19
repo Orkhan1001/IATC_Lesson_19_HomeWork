@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap');
+/* GENERAL */
+body{
+    min-height: 100vh;
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+hr{
+    margin: 10px 0px;
+}
+label{
+    padding: 0px 10px;
+    display: block;
+}
+
+.t_input_style{
+    display: inline-block;
+    width: 100%;
+}
+.t_select_style{
+    display: inline-block;
+    width: 100%;
+}
+.t_formats{
+    display: inline-block;
+    width: 100%;
+}
+
+/* ELEMENT */
+#t_div{
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* PANELS */
+#t_DisplayPanel, #t_ControlPanel{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 152vh;
+}
+
+/* DISPLAY PANEL */
+#t_DisplayPanel{
+    position: fixed;
+    width: 100%;
+}
+
+/* CONTROL PANEL */
+#t_ControlPanel{
+    padding: 0px 5px;
+    background-color: lightseagreen;
+    width: 100%;
+}
+#t_ControlPanel .t_header{
+    padding: 10px 0px;
+}
+#t_ControlPanel h2{
+    margin: 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+/* Language Settings */
+.t_ul{
+    background-color: lightseagreen;
+    /* min-width: 100px; */
+    /* right: 20px; */
+}
+.t_ul li{
+    text-align: center;
+    margin: 2px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.t_ul li:nth-child(1){
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png'); 
+}
+.t_ul li:nth-child(2){
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg');
+}
+.t_ul li:nth-child(3){
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Russia_%282-1%29.svg');
+}
+.t_ul li span{
+    visibility: hidden;
+}
+.t_ul li:hover span{
+    visibility: visible;
+}
+#positionControl div{
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#positionControl label{
+    /* text-align: center; */
+    margin-bottom: 50px;
+}
+#positionControl div button{
+    position: relative;
+}
+#positionControl div button:nth-child(1){
+    right: 3px;
+}
+#positionControl div button:nth-child(3){
+    left: 3px;
+}
+#positionControl div button:nth-child(4){
+    position: absolute;
+    top: -29px;
+}
+.t_button{
+    margin: 5px;
+}
+#t_ending{
+    height: 50px;
+}
+
+@media screen and (max-width: 991px) {
+    #t_DisplayPanel{
+        position: static;
+        min-height: 144vh;
+    }
+    #t_ControlPanel{
+        min-height: 144vh;
+    }
+}

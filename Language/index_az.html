@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Bootsrap CSS -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- My Style -->
+        <link rel="stylesheet" href="../Styles/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- <div class="row"> -->
+
+                <!-- Control Panel -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="row">
+                        <div id="t_ControlPanel">
+                            <!-- Header -->
+                            <div class="t_header">
+                                <div class="row">
+                                    <h2 class="col-xs-10 col-sm-10 col-md-9 col-lg-9">İdarə Paneli</h2>
+                                    <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
+                                        <div class="dropdown t_dropdown">
+                                            <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-right t_ul">
+                                                <li><a href="../index.html"><span>ENG</span></a></li>
+                                                <li><a href="../Language/index_az.html"><span>AZ</span></a></li>
+                                                <li><a href="../Language/index_rus.html"><span>RUS</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Controls -->
+                            <div id="height_width_control">
+
+                                <!-- Height of Element -->
+                                <div>
+                                    <div class="form-group" id="heightControl">
+                                        <div class="row">
+
+                                            <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
+                                                <!-- <div class="row"> -->
+                                                    <label for="t_height">Hündürlük</label>
+                                                    <input class="form-control t_input_style" id="t_height" type="text" name="heightOfElement"required autocomplete="off">
+                                                <!-- </div> -->
+                                            </div>
+
+                                            <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
+                                                <!-- <div class="row"> -->
+                                                    <label for="t_heightFormat">Ölçü</label>
+                                                    <select class="form-control t_formats" id="t_heightFormat" name="heightfromat">
+                                                        <option value="px">px</option>
+                                                        <option value="%">%</option>
+                                                        <option value="em">em</option>
+                                                        <option value="vh">vh</option>
+                                                    </select>
+                                                <!-- </div> -->
+                                            </div>
+
+                                            <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
+                                                <!-- <div class="row"> -->
+                                                    <label for="t_width">Uzunluq</label>
+                                                    <input class="form-control t_input_style" id="t_width" type="text" name="widthOfElement" required autocomplete="off">
+                                                <!-- </div> -->
+                                            </div>
+
+                                            <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6">
+                                                <!-- <div class="row"> -->
+                                                    <label for="t_widthFormat">Ölçü</label>
+                                                    <select class="form-control t_formats" id="t_widthFormat" name="widthfromat">
+                                                        <option value="px">px</option>
+                                                        <option value="%">%</option>
+                                                        <option value="em">em</option>
+                                                        <option value="vw">vw</option>
+                                                    </select>
+                                                <!-- </div> -->
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!-- Colors -->
+                            <div id="t_colors">
+                                <div class="row">
+
+                                    <!-- Color of Element -->
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group" id="colorControl">
+                                            <label for="t_color">Fiqur Rəngi</label>
+                                            <input class="form-control t_input_style" id="t_color" type="text" name="colorOfElement" >
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <!-- Color of Body -->
+                                        <div class="form-group" id="colorControlBody">
+                                            <label for="t_colorBody">Ətraf Rəngi</label>
+                                            <input class="form-control t_input_style" id="t_colorBody" type="text" name="colorOfBody" >
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr>
+            
+                            <!-- Inside Text of Element -->
+                            <div class = "textPartOfElement">
+                                <div class="row">
+
+                                    <!-- Text -->
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group" id="insideTextOfElement">
+                                            <label for="t_textInside">Daxildə Mətn</label>
+                                            <input class="form-control t_input_style" id="t_textInside" type="text" name="insideTextOfElement" > 
+                                        </div>
+                                    </div>
+
+                                    <!-- Color of Text -->
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group" id="textColorControl">
+                                            <label for="t_colorText">Mətn Rəngi</label>
+                                            <input class="form-control t_input_style" id="t_colorText" type="text" name="colorOfText">
+                                        </div>
+                                    </div>
+
+                                    <!-- Style of Text -->
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group" id="textStyleControl">
+                                            <label for="t_styleText">Mətn Üslubu</label>
+                                            <select class="form-control t_input_style" id="t_styleText" type="text" name="styleOfText">
+                                                <option value="initial">-SELECT-</option>
+                                                <option value="'Arial'">Arial</option>
+                                                <option value="'Verdana'">Verdana</option>
+                                                <option value="'Poppins'">Poppins</option>
+                                                <option value="'Times New Roman'">Times New Roman</option>
+                                                <option value="cursive">Cursive</option>
+                                                <option value="sans-serif">Sans Serif</option>
+                                                <option value="monospace">Monospace</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Size of Text -->
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group" id="textColorControl">
+                                        <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div style="margin-right: -10px;">
+                                                        <label for="t_textSize">Həcm</label>
+                                                        <input class="form-control t_input_style" id="t_textSize" type="text" name="textSizeFormat">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div style="margin-left: -10px;">
+                                                        <label for="t_textSizeFormat">Ölçü</label>
+                                                        <select class="form-control t_formats" id="t_textSizeFormat" name="textSizeFormat">
+                                                            <option value="px">px</option>
+                                                            <option value="%">%</option>
+                                                            <option value="em">em</option>
+                                                            <option value="vw">vw</option>
+                                                            <option value="vh">vh</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!-- BackGround Image of Element -->
+                            <div class="form-group" id="imageControl">
+                                <div class="row">
+
+                                    <!-- Image -->
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <label for="t_bgImage">Şəkil</label>
+                                        <input class="form-control t_input_style" id="t_bgImage" type="text" name="backgroundImageOfElement"  autocomplete="off">
+                                    </div>
+                                    <!-- Image Style -->
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <label for="t_imageStyle">Şəkil Stili</label>
+                                        <select class="form-control t_select_style" id="t_imageStyle" name="imageStyle">
+                                            <option value="initial">-SELECT-</option>
+                                            <option value="cover">Cover</option>
+                                            <option value="contain">Contain</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Repeat -->
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <label for="t_imageRepeat">Təkrar etmə</label>
+                                        <select class="form-control t_select_style" id="t_imageRepeat" name="imageRepeat">
+                                            <option value="initial">-SELECT-</option>
+                                            <option value="repeat">Repeat</option>
+                                            <option value="no-repeat">No Repeat</option>
+                                            <option value="repeat-x">Repeat X</option>
+                                            <option value="repeat-y">Repeat Y</option>
+                                            <option value="round">Round</option>
+                                            <option value="space">Space</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!-- Border of Element -->
+                            <div class="form-group" id="boderControl">
+                                <div class="row">
+                                    
+                                    <!-- Border Size -->
+                                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-6">
+                                        <label for="t_bodersize">Çərçıvə</label>
+                                        <input class="form-control t_input_style" id="t_bodersize" type="text" name="borderOfElement">
+                                    </div>
+        
+                                    <!-- Unit -->
+                                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-6">
+                                        <label for="t_borderFormat">Ölçü</label>
+                                        <select class="form-control t_formats" id="t_borderFormat" name="borderfromat">
+                                            <option value="px">px</option>
+                                            <option value="%">%</option>
+                                            <option value="em">em</option>
+                                            <option value="vw">vw</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Border Style -->
+                                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-6">
+                                        <label for="t_boderStyle">Üslub</label>
+                                        <select class="form-control t_select_style" id="t_boderStyle" name="borderStyle">
+                                            <option value="initial">-SELECT-</option>
+                                            <option value="solid">Solid</option>
+                                            <option value="dotted">Dotted</option>
+                                            <option value="dashed">Dashed</option>
+                                            <option value="double">Double</option>
+                                            <option value="groove">Groove</option>
+                                            <option value="ridge">Ridge</option>
+                                            <option value="inset">Inset</option>
+                                            <option value="outset">Outset</option>
+                                        </select>
+                                    </div>
+        
+                                    <!-- Border Color -->
+                                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-6">
+                                        <label for="t_borderColor">Rəng</label>
+                                        <input class="form-control t_input_style" id="t_borderColor" type="text" name="borderColor">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+            
+                            <!-- Border Radius of Element -->
+                            <div class="form-group" id="borderRadiusControl">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <label for="t_borderRadius">Çərçıvə Radiusu</label>
+                                        <input class="form-control t_input_style" id="t_borderRadius" type="text" name="borderRadiusOfElemet">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <label for="t_borderRadiusFormat">Ölçü</label>
+                                        <select class="form-control t_formats" id="t_borderRadiusFormat" name="borderRadiusfromat">
+                                            <option value="px">px</option>
+                                            <option value="%">%</option>
+                                            <option value="em">em</option>
+                                            <option value="vw">vw</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+            
+                            <!-- Control Position of Element -->
+                            <div id="positionControl">
+                                <label>Fiqur Hərəkəti</label>
+                                <div>
+
+                                    <button class="btn btn-primary" onclick="toLeft()">
+                                        <span class="glyphicon glyphicon-arrow-left"></span>
+                                    </button>
+                                    
+                                    <button class="btn btn-primary" onclick="toBottom()">
+                                        <span class="glyphicon glyphicon-arrow-down"></span>
+                                    </button>
+
+                                    <button class="btn btn-primary" onclick="toRight()">
+                                        <span class="glyphicon glyphicon-arrow-right"></span>
+                                    </button>
+
+                                    <button class="btn btn-primary" onclick="toUp()">
+                                        <span class="glyphicon glyphicon-arrow-up"></span>
+                                    </button>
+
+                                    
+                                </div>
+                                <hr>
+                            </div>
+            
+                            <!-- Button -->
+                            <button class="btn btn-success btn-block" type="button" onclick="makeElement()">Başlat</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Display panel -->
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="row">
+                        <div id="t_DisplayPanel">
+                            <!-- The Element That Will Be Displayed -->
+                            <div id="t_div">
+                                <p id="p_inside_text"></p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+            <!-- </div> -->
+            
+        </div>   
+        <div id="t_ending"></div>
+        
+        
+        
+        <!-- Bootsrap SCRIPTS -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- My Script -->
+        <script src="../Scripts/main.js"></script>
+    </body>
+</html>
